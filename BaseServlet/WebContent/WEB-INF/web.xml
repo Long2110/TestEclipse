@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <display-name>BaseServlet</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  
+  <servlet>
+  	<servlet-name>helloWorld</servlet-name>
+  	<servlet-class>learn.basic.servlet.HelloWorld</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>helloWorld</servlet-name>
+  	<url-pattern>/hello</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>ontap1</servlet-name>
+  	<servlet-class>learn.basic.servlet.Ontap1</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>ontap1</servlet-name>
+  	<url-pattern>/ontap1</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>ServletConfig</servlet-name>
+  	<servlet-class>learn.basic.servlet.ServletRequest</servlet-class>
+  	<init-param>
+  		<param-name>name</param-name>
+  		<param-value>Long KaKa</param-value>
+  	</init-param>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>ServletConfig</servlet-name>
+  	<url-pattern>/ServletConfig</url-pattern>
+  </servlet-mapping>
+  
+</web-app>
